@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body style="background-color: #111111; color: white;">
+    <nav>
+        <ul>
+            <li><a href="tablas.html">Tablas</a></li>
+            <li><a href="Forms.html">Forms</a></li>
+            <li><a href="hyp.html">Hipervinculos</a></li>
+            <li><a href="Multimedia.html">Multimedia</a></li>
+            <li><a href="example.html">Ejemplo</a></li>
+            <li><a href="examhyp.html">Ejemplo ejercicio</a></li>
+        </ul>
+    </nav>
+    <div id="formulario", align="center">
+        <form autocomplete="on" name="Mi primer formulario">
+            <fieldset>
+                <legend>Ejemplos de inputs</legend>
+                <p>Selección de color</p>
+                <input type="color">
+                <p>Fecha</p>
+                <input type="date">
+                <p>Fecha-Hora</p>
+                <input type="datetime">
+                <p>Fecha y Hora Local</p>
+                <input type="datetime-local">
+                <p>Archivos planos, word, excel y otros</p>
+                <input type="file">
+                <p>Email</p>
+                <input type="email">
+                <p>Mes</p>
+                <input type="month">
+                <p>Números</p>
+                <input type="number">
+                <p>Rango de números</p>
+                <input type="range">
+                <p>Búsqueda</p>
+                <input type="search">
+                <p>Teléfono</p>
+                <input type="tel">
+                <p>Hora</p>
+                <input type="time">
+                <p>Dirección URL</p>
+                <input type="url" required> <!el atributo required hace que se tenga que llenar obligatoriamente ese campo-->
+                <p>Semana</p>
+                <input type="week">
+                <p>Reset</p>
+                <input type="reset">
+                <p>Botón html</p>
+                <input type="button" value="Botón HTML">
+                <p>Envío de formulario</p>
+                <input type="submit">
+                <p>Campo de texto deshabilitado</p>
+                <input type="text" disabled value="Campo deshabilitado">
+                <p>Campo de tecto solo de lectura</p>
+                <input type="text" readonly value="Un campo para que leas">
+                <p>Texto máximo de 5 carácteres</p>
+                <input type="text" maxlength="5">
+                <p>Ingresar valor con número máximo</p>
+                <input type="number" max="50">
+                <p>Ingresar número con valor minimo de 5</p>
+                <input type="number" min="5">
+                <p>Campo de tecto con valor determinado </p>
+                <input type="text" value="Texto predeterminado">
+                <p>Campo con saltos de 5</p>
+                <input type="number" step="5">
+                <p>Esto le da una pista al usuario</p>
+                <input type="text" placeholder="Escribe tu nombre">
+                <p>Atributo para nombrar una etiqueta</p>
+                <input type="text" name="Nombrar etiquetas">
+                <p>Asignar un identificador único</p>
+                <input type="email" id="email_usuario"><br>
+                    <label for="contraseña">Contraseña<br></label>
+                    <input name="contraseña" type="password"><br>
+                <input type="checkbox" id="terminos" value="yes">
+                <label for="terminos">Terminos y condiciones</label><br>
+                <input type="radio" id="manana" value="M" name="horario">
+                <label for="manana">Mañana</label><br>
+                <input type="radio" id="tarde" value="T" name="horario">
+                <label for="tarde">Tarde</label><br>
+                <p>Enviar</p>
+                <input type="submit" name="" id="">
+            </fieldset>
+        </form>
+       </div>
+
+       <div align="center">
+        <form autocomplete="on" name="formulario con controles">
+            <fieldset>
+                <legend>Formulario con controles</legend>
+                <select>
+                    <option>Opción 1<br></option>
+                    <option>Opción 2<br></option>
+                    <option>Opción 3<br></option>
+                </select>
+                <div>
+
+                     <textarea name="area_text" cols="30" rows="10"></textarea>
+
+                </div>
+                <h1>Enunciado 1</h1>
+                <em>Enunciado 2</em>
+                <strong>Enunciado 3</strong>
+                <b>Enunciado 4</b>
+                <p>Enunciado 5</p>
+                <label for="nombre">Será la más usada en formularios</label>
+                <input type="text" name="names" id="nombre">
+            </fieldset>
+        </form>
+    </div>
+
+    <div id="lista_con_grupos">
+     <label for="ciudades"><h1>Lista con grupos de ciudades para ejemplos</h1></label>
+     <select name="ciudades">
+        <optgroup label="Latinoamerica">
+           <option value="caracas">Caracas</option>
+           <option value="bogota">Bogotá</option>
+         </optgroup><optgroup label="Europa">
+           <option value="madrid">Madrid</option>
+           <option value="londres">Londres</option>
+         </optgroup>
+      </select>
+    </div>
+
+    <div>
+     <label for="tipo"><h1>Listas de selección multiple Tipo</h1></label><br>
+     <select name="tipo" multiple="true">
+        <option value="musico">Músico</option>
+        <option value="pintor">Pintor</option>
+        <option value="actor">Actor</option>
+        <option value="escultor">Escultor</option>
+     </select>
+    </div>
+</body>
+</html>

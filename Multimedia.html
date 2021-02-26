@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina 2</title>
+</head>
+<body style="background-color:#111111; color: white;">
+    < <nav>
+        <ul>
+            <li><a href="tablas.html">Tablas</a></li>
+            <li><a href="Forms.html">Forms</a></li>
+            <li><a href="hyp.html">Hipervinculos</a></li>
+            <li><a href="Multimedia.html">Multimedia</a></li>
+            <li><a href="example.html">Ejemplo</a></li>
+            <li><a href="examhyp.html">Ejemplo ejercicio</a></li>
+        </ul>
+    </nav>
+        a href="../html/INDEX.HTML">Inicio</a>
+    
+    <figure align="center">
+        <figcaption style="font-size: xx-large;">Tech</figcaption> 
+        <img src="https://images.unsplash.com/photo-1590901846539-999905494d45?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="Tech" width="60%">
+    </figure>
+
+    <h2>Autoplay</h2>
+    <p>Inicia automaticamente al abrir la web</p>
+    <audio src="../audios/Michael Jackson-Billie Jean.mp3" controls autoplay ></audio>
+    <h2>Loop</h2>
+    <p>En cuanto finalice, se repite</p>
+    <audio src="../audios/Michael Jackson-Billie Jean.mp3" controls autoplay loop></audio>
+    <h2>preload</h2>
+    <p>Cuando tenemos archivos  muy pesados y ya los cargamos, los guarda en una memoria para no tener que volver a descargarlo</p>
+    <ul> 
+        <li> none: No almacena archivos</li>
+        <audio src="../audios/Michael Jackson-Billie Jean.mp3" controls preload="none"></audio>
+        <li>auto: Almacena temporalmente el archivo multimedia</li>
+        <audio src="../audios/Michael Jackson-Billie Jean.mp3" controls preload="auto"></audio>
+    </ul>
+
+    <video src="../videos/Kiss-I Was Made For Lovin You.mp4" controls width="720px" poster="/videos/kiss.jpg"></video>
+
+    <p>Source es una etiqueta para poner varios tipos de video en caso de incompatibilidad</p>
+    <source src="" type="">
+    
+    <iframe src="https://www.nextu.com" sandbox="allow-scripts, allow-popups" width="1280px" height="720px" name="iframe_de_prueba">No se puede cargar el iframe perro</iframe>
+</body>
+</html>
